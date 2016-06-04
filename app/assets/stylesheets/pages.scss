@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  font-family:'Montserrat',sans-serif;
+	font-family:'Montserrat',sans-serif;
 }
 
 #mobile-header {
@@ -16,33 +16,33 @@ body {
 }
 
 .main-home {
-  height:500px;
-  background-image: url('http://cdn.playbuzz.com/cdn/e2460e82-7ce6-4875-92be-06650e63df41/7f203731-d879-4224-812b-ad122e019178.jpg');
-  padding-top:20px;
-  padding-left:20px;
-  color:#fff;
-  -o-background-size: cover;
-  background-size: cover;
+  	height:500px;
+  	background-image: url('http://cdn.playbuzz.com/cdn/e2460e82-7ce6-4875-92be-06650e63df41/7f203731-d879-4224-812b-ad122e019178.jpg');
+  	padding-top:20px;
+  	padding-left:20px;
+  	color:#fff;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .main-about {
-  height:500px;
-  background-image: url('http://www.mrwallpaper.com/wallpapers/punta-cana-beach.jpg');
-  padding-top:20px;
-  padding-left:20px;
-  color:#fff;
-  -o-background-size: cover;
-  background-size: cover;
+  	height:500px;
+  	background-image: url('http://www.mrwallpaper.com/wallpapers/punta-cana-beach.jpg');
+  	padding-top:20px;
+  	padding-left:20px;
+  	color:#fff;
+	-o-background-size: cover;
+  	background-size: cover;
 }
 
 .banner-content {
-  text-align:center;
-  display:relative;
-  padding-top:100px;
+  	text-align:center;
+  	display:relative;
+  	padding-top:100px;
 }
 
 .btn {
- 		display:inline-block;
+ 	display:inline-block;
   	clear:both;
   	background-color:blue;
   	color: #fff;
@@ -59,19 +59,19 @@ body {
 }
 
 .support {
-  height:300px;
+  	height:300px;
  	text-align:center;
-  display:relative;
-  padding-top:50px;
-  padding-bottom:100px;
+  	display:relative;
+  	padding-top:50px;
+  	padding-bottom:100px;
 }
 
 .footer {
-  height: 100px;
-  background-color:lightgray;
-  padding-top:20px;
-  padding-left:20px;
-  text-align:center;
+  	height: 100px;
+  	background-color:lightgray;
+  	padding-top:20px;
+  	padding-left:20px;
+  	text-align:center;
 }
 
 @import url("https://cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css");
