@@ -1,0 +1,15 @@
+.sidr{
+  top:0px;
+  background-color: black;
+}*/ /*this solve the problem but its not correct*/
+
+.hamburger {
+  height:20px;
+  width:20px;
+}
+
+  img {
+    		height:20px;
+    		width:20px;
+    
+  }
