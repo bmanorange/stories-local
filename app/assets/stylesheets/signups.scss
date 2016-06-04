@@ -1,0 +1,111 @@
+// Place all the styles related to the Signups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-contact {
+  	height:650px;
+  	background-image: url('http://www.classicsafaricompany.com.au/images/destination_accom_latin-america/argentina/iguazu-falls-and-ibera-wetlands/lois-suites-iguazu-falls/iguazu-falls.jpg');
+  	padding-top:20px;
+  	padding-left:20px;
+  	color:#fff;
+	-o-background-size: cover;
+  	background-size: cover;
+}
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+$inputWidth: 300px;
+$textfieldFontSize: 16px;
+$textfieldPaddingTop: 12px;
+$textfieldMarginTop: 16px;
+$textfieldMarginBottom: 8px;
+$textfieldInputPadding: 8px;
+$textfieldLabelFloatingFontSize: 12px;
+$textfiledLabelHighlightColor: #fff;
+$textfieldLabelBorderColor: #fff;
+$textfieldLabelColor: #fff;
+
+@mixin material-animation-default($duration:0.2s) {
+  transition-duration: $duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textfield {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+	margin-top: $textfieldMarginTop;
+	margin-bottom: $textfieldMarginBottom;
+	padding-top: $textfieldPaddingTop;
+	
+	width: $inputWidth;
+  max-width: 100%;
+	color: #fff;
+}
+
+.textfield__input,
+.textfield__label {
+	font-size: $textfieldFontSize;
+	text-align: left;
+  width: 100%;
+}
+
+.textfield__input {
+  display: block;
+  margin: 5px;
+	outline: 0;
+  border: none;
+  border-bottom: 1px solid $textfieldLabelBorderColor;
+  background: teal;
+  padding: $textfieldInputPadding 0;
+}
+
+.textfield__label {
+  display: block;
+  position: absolute;
+  top: $textfieldInputPadding + $textfieldPaddingTop;
+  bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  color: $textfieldLabelColor;
+  margin-left:5px;
+
+  &:after {
+    visibility: hidden;
+    position: absolute;
+		left: 45%;
+		bottom: 0;
+    background-color: $textfiledLabelHighlightColor;
+    width: 10px;
+    height: 2px;
+    content: '';
+		@include material-animation-default();
+  }
+}
+
+.textfield--floatingLabel {
+	.textfield__label {
+		@include material-animation-default();
+	}
+
+	.textfield__input:focus + .textfield__label,
+	.textfield__input:valid + .textfield__label {
+		visibility: visible;
+		top: 0;
+		font-size : $textfieldLabelFloatingFontSize;
+		margin-left:5px;
+	}
+	
+	.textfield__input:focus + .textfield__label {
+		color: $textfiledLabelHighlightColor;
+		
+		&:after {
+			visibility: visible;
+			left: 0;
+			width: 100%;
+		}
+	}
+}

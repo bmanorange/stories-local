@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   #about action
   def about
   end
+  
+  #thanks
+  def thanks
+  end
 end

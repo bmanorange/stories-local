@@ -4,6 +4,14 @@ Rails.application.routes.draw do
   	
   	#FROM HOME TO ABOUT
   	get '/about' => 'pages#about'
+  	
+  	#SIGNUPS
+  	resources :signups
+  	get '/new' => 'signups#new'
+  	
+  	#SIGNUP SUCCESS
+  	get '/thanks' => 'pages#thanks'
+  	
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
